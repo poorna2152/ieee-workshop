@@ -5,7 +5,7 @@
 
 [ballerina]
 dependencies-toml-version = "2"
-distribution-version = "2201.10.0"
+distribution-version = "2201.10.1"
 
 [[package]]
 org = "ballerina"
@@ -147,6 +147,15 @@ dependencies = [
 
 [[package]]
 org = "ballerina"
+name = "lang.error"
+version = "0.0.0"
+scope = "testOnly"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"}
+]
+
+[[package]]
+org = "ballerina"
 name = "lang.int"
 version = "0.0.0"
 dependencies = [
@@ -256,6 +265,20 @@ dependencies = [
 
 [[package]]
 org = "ballerina"
+name = "test"
+version = "0.0.0"
+scope = "testOnly"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "lang.array"},
+	{org = "ballerina", name = "lang.error"}
+]
+modules = [
+	{org = "ballerina", packageName = "test", moduleName = "test"}
+]
+
+[[package]]
+org = "ballerina"
 name = "time"
 version = "2.5.0"
 dependencies = [
@@ -283,16 +306,26 @@ modules = [
 ]
 
 [[package]]
+org = "demotest"
+name = "date_library"
+version = "0.1.0"
+modules = [
+	{org = "demotest", packageName = "date_library", moduleName = "date_library"}
+]
+
+[[package]]
 org = "poorna"
-name = "demo_2"
+name = "ballerina_modules"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "http"},
-	{org = "ballerinai", name = "observe"}
+	{org = "ballerina", name = "test"},
+	{org = "ballerinai", name = "observe"},
+	{org = "demotest", name = "date_library"}
 ]
 modules = [
-	{org = "poorna", packageName = "demo_2", moduleName = "demo_2"},
-	{org = "poorna", packageName = "demo_2", moduleName = "demo_2.date"},
-	{org = "poorna", packageName = "demo_2", moduleName = "demo_2.time"}
+	{org = "poorna", packageName = "ballerina_modules", moduleName = "ballerina_modules"},
+	{org = "poorna", packageName = "ballerina_modules", moduleName = "ballerina_modules.date"},
+	{org = "poorna", packageName = "ballerina_modules", moduleName = "ballerina_modules.time"}
 ]
 

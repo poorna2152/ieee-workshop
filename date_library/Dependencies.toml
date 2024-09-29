@@ -5,7 +5,7 @@
 
 [ballerina]
 dependencies-toml-version = "2"
-distribution-version = "2201.10.0"
+distribution-version = "2201.10.1"
 
 [[package]]
 org = "ballerina"
@@ -63,13 +63,13 @@ modules = [
 ]
 
 [[package]]
-org = "poorna"
-name = "demo_date_1"
+org = "demotest"
+name = "date_library"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "test"}
 ]
 modules = [
-	{org = "poorna", packageName = "demo_date_1", moduleName = "demo_date_1"}
+	{org = "demotest", packageName = "date_library", moduleName = "date_library"}
 ]
 
