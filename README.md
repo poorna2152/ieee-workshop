@@ -11,6 +11,7 @@ This repository demonstrates the following concepts in Ballerina:
 3. **Reusing Ballerina Code**  
    Explore methods for reusing existing Ballerina code through Ballerina Cental.
 
-## Getting Started
+## Prerequisites
 
-To get started with the project, ensure you have Ballerina installed on your system. You can then clone this repository and run the provided examples.
+- [Install the latest Ballerina Swan Lake distribution](https://ballerina.io/downloads/)
+- Set up [Visual Studio code](https://code.visualstudio.com/) by installing the [Ballerina extension](https://ballerina.io/learn/vs-code-extension/)

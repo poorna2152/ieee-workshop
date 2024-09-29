@@ -24,7 +24,7 @@ If you want to test the library locally without pushing it to **Ballerina Centra
 To push the library to the local repository, use:
 
 ```bash
-bal push --repository local
+$ bal push --repository local
 ```
 
 ### Using the Local Library
@@ -67,7 +67,7 @@ repository = "local"
     Once ready, execute the following command to publish your package:
 
     ```bash
-    bal push
+    $ bal push
     ```
 
 For more information refer [here](https://ballerina.io/learn/publish-packages-to-ballerina-central/).

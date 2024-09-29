@@ -15,7 +15,7 @@ Each module encapsulates its own set of operations, demonstrating how modules ke
 
 The service exposes two key endpoints for interacting with the **date** and **time** modules:
 
-### 1. `/dateAfter`
+### 1. `/incrementDate`
 
 - **Description**: Adds a specified number of weeks and days to a given date.
   - **Method**: `GET`
@@ -25,10 +25,10 @@ The service exposes two key endpoints for interacting with the **date** and **ti
   - `days`: Number of days to add.
 
   ```bash
-  curl -X GET "http://localhost:9090/dateAfter?date=2024-09-25&weeks=2&days=5"
+  curl -X GET "http://localhost:9090/incrementDate?date=2024-09-25&weeks=2&days=5"
   ```
 
-### 2. `/timeAfter`
+### 2. `/incrementTime`
 
 - **Description**: Adds a specified number of hours and minutes to a given time.
 - **Method**: `GET`
@@ -39,7 +39,7 @@ The service exposes two key endpoints for interacting with the **date** and **ti
 - **Example Request**:
 
   ```bash
-  curl -X GET "http://localhost:9090/timeAfter?time=14:30&hours=2&minutes=45"
+  curl -X GET "http://localhost:9090/incrementTime?time=14:30&hours=2&minutes=45"
   ```
 
 ## How to Run the Service
@@ -48,5 +48,5 @@ The service exposes two key endpoints for interacting with the **date** and **ti
 2. Build and run the Ballerina service:
 
    ```bash
-   bal run
+   $ bal run
    ```
