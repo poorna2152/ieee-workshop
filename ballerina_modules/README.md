@@ -18,20 +18,20 @@ The service exposes two key endpoints for interacting with the **date** and **ti
 ### 1. `/incrementDate`
 
 - **Description**: Adds a specified number of weeks and days to a given date.
-  - **Method**: `GET`
+  - **Method**: `POST`
   - **Parameters**:
   - `date`: The starting date in `YYYY-MM-DD` format.
   - `weeks`: Number of weeks to add.
   - `days`: Number of days to add.
 
   ```bash
-  curl -X GET "http://localhost:9090/incrementDate?date=2024-09-25&weeks=2&days=5"
+  curl -X POST "http://localhost:9090/incrementDate?date=2024-09-25&weeks=2&days=5"
   ```
 
 ### 2. `/incrementTime`
 
 - **Description**: Adds a specified number of hours and minutes to a given time.
-- **Method**: `GET`
+- **Method**: `POST`
 - **Parameters**:
   - `time`: The starting time in `HH:mm` format.
   - `hours`: Number of hours to add.
@@ -39,7 +39,7 @@ The service exposes two key endpoints for interacting with the **date** and **ti
 - **Example Request**:
 
   ```bash
-  curl -X GET "http://localhost:9090/incrementTime?time=14:30&hours=2&minutes=45"
+  curl -X POST "http://localhost:9090/incrementTime?time=14:30&hours=2&minutes=45"
   ```
 
 ## How to Run the Service
